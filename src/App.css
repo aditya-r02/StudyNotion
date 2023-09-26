@@ -1,0 +1,110 @@
+/* write your css here */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html, body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-size: 16px;
+}
+
+.highlighted-text{
+    background: var(--gradient-05, linear-gradient(138deg, #1FA2FF 0%, #12D8FA 50%, #A6FFCB 100%));
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
+
+.ellipse{
+    width: 23.30931rem;
+height: 16.06588rem;
+position: absolute;
+left: -0.2rem;
+top: -0.3125rem;
+border-radius: 23.30931rem;
+opacity: 0.2;
+
+filter: blur(34px);
+}
+
+.ellipse1{
+    background: var(--gradient-02, linear-gradient(144deg, #8A2BE2 0%, #FFA500 50%, #F8F8FF 100%));
+}
+
+.ellipse2{
+    background: var(--gradient-05, linear-gradient(138deg, #1FA2FF 0%, #12D8FA 50%, #A6FFCB 100%));
+}
+
+.vector-bg{
+    background: url(../src/assets/Images/bghome.svg);
+    background-size: contain;
+}
+
+
+.spinner {
+    width: 56px;
+    height: 56px;
+    border: 11.2px #ffd60a double;
+    border-left-style: solid;
+    border-radius: 50%;
+    animation: spinner-aib1d7 0.75s infinite linear;
+ }
+ 
+ @keyframes spinner-aib1d7 {
+    to {
+       transform: rotate(360deg);
+    }
+ }
+
+ .ellipse3{
+    background: var(--gradient-08, linear-gradient(138deg, #E65C00 0%, #F9D423 100%));
+ }
+
+ .highlighted-text1{
+    background: var(--gradient-06, linear-gradient(138deg, #FF512F 0%, #F09819 100%));
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+ }
+
+ .highlighted-text2{
+    background: var(--gradient-08, linear-gradient(138deg, #E65C00 0%, #F9D423 100%));
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+ }
+
+.highlighted-text3{
+    background: var(--gradient-04, linear-gradient(138deg, #833AB4 0%, #FD1D1D 50%, #FCB045 100%));
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.ellipse4{
+    background: var(--gradient-09, linear-gradient(139deg, #EC008C 0%, #FC6767 100%));
+}
+
+.inputBtn:checked{
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%20fill%3D%22none%22%3E%0A%20%20%3Cg%20clip-path%3D%22url(%23clip0_51648_637)%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M10%200C8.02219%200%206.08879%200.58649%204.4443%201.6853C2.79981%202.78412%201.51809%204.3459%200.761209%206.17317C0.00433286%208.00043%20-0.193701%2010.0111%200.192152%2011.9509C0.578004%2013.8907%201.53041%2015.6725%202.92894%2017.0711C4.32746%2018.4696%206.10929%2019.422%208.0491%2019.8079C9.98891%2020.1937%2011.9996%2019.9957%2013.8268%2019.2388C15.6541%2018.4819%2017.2159%2017.2002%2018.3147%2015.5557C19.4135%2013.9112%2020%2011.9778%2020%2010C19.9971%207.34872%2018.9426%204.80684%2017.0679%202.9321C15.1932%201.05736%2012.6513%200.00286757%2010%200V0ZM10%2017.5C8.51664%2017.5%207.0666%2017.0601%205.83323%2016.236C4.59986%2015.4119%203.63857%2014.2406%203.07091%2012.8701C2.50325%2011.4997%202.35473%209.99168%202.64411%208.53682C2.9335%207.08197%203.64781%205.74559%204.6967%204.6967C5.7456%203.64781%207.08197%202.9335%208.53683%202.64411C9.99168%202.35472%2011.4997%202.50325%2012.8701%203.0709C14.2406%203.63856%2015.4119%204.59985%2016.236%205.83322C17.0601%207.06659%2017.5%208.51664%2017.5%2010C17.4978%2011.9884%2016.7069%2013.8948%2015.3009%2015.3009C13.8948%2016.7069%2011.9885%2017.4978%2010%2017.5Z%22%20fill%3D%22%23FFD60A%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M10%205C9.01109%205%208.0444%205.29324%207.22215%205.84265C6.3999%206.39206%205.75904%207.17295%205.3806%208.08658C5.00217%209.00021%204.90315%2010.0055%205.09608%2010.9755C5.289%2011.9454%205.76521%2012.8363%206.46447%2013.5355C7.16373%2014.2348%208.05465%2014.711%209.02455%2014.9039C9.99445%2015.0969%2010.9998%2014.9978%2011.9134%2014.6194C12.827%2014.241%2013.6079%2013.6001%2014.1573%2012.7779C14.7068%2011.9556%2015%2010.9889%2015%2010C14.9986%208.67436%2014.4713%207.40342%2013.534%206.46605C12.5966%205.52868%2011.3256%205.00143%2010%205Z%22%20fill%3D%22%23FFD60A%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3CclipPath%20id%3D%22clip0_51648_637%22%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%2220%22%20height%3D%2220%22%20fill%3D%22white%22%2F%3E%0A%20%20%20%20%3C%2FclipPath%3E%0A%20%20%3C%2Fdefs%3E%0A%3C%2Fsvg%3E"
+    );
+    width: 1.25rem;
+    height: 1.25rem;
+    
+}
+
+.inputBtn:not(:checked){
+    appearance: none;
+    width: 1.15rem;
+    height: 1.15rem;
+    border: 0.1rem solid #585D69;
+    border-radius: 50%;
+}
